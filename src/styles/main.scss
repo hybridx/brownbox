@@ -4,6 +4,7 @@
 html {
 	scroll-behavior: smooth;
 }
+
 nav {
 	background: #ffffffcc;
 	box-shadow: -6px 6px 11px 0px #0000004f;
@@ -11,7 +12,28 @@ nav {
 
 .hero {
 	img {
-		height: auto;
+		max-height: 720px;
+		max-width: 1110px;
+	}
+}
+
+.types {
+	display: grid;
+	place-items: center;
+	&__card {
+		padding: 1.5rem;
+		height: 320px;
+		max-width: 340px;
+		h5 {
+			margin-top: 1.5rem;
+		}
+		img {
+			outline: 2px solid white;
+			outline-offset: -2px;
+		}
+		&:hover {
+			box-shadow: 0 2px 4px -1px #00000033, 0 4px 5px 0 #00000024, 0 1px 10px 0 #0000001f;
+		}
 	}
 }
 
@@ -22,15 +44,15 @@ nav {
 	-webkit-column-width: 33%;
 	-moz-column-width: 33%;
 	column-width: 33%; 
-  }
-.gallery .pics {
-	-webkit-transition: all 350ms ease;
-	transition: all 350ms ease; 
-}
-.gallery .animation {
-	-webkit-transform: scale(1);
-	-ms-transform: scale(1);
-	transform: scale(1); 
+	.pics {
+		-webkit-transition: all 350ms ease;
+		transition: all 350ms ease; 
+	}
+	.animation {
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1); 
+	}
 }
 
 
