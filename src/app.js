@@ -34,7 +34,7 @@ const offers = [
 if (offerings) {
     offerings.innerHTML = offers.map(
         (offer) => {
-            return `<div class="row mb-3">
+            return `<div class="row">
             <div class="col-1">
               <i class="fas ${offer.icon} fa-lg indigo-text"></i>
             </div>
